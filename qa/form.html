@@ -32,8 +32,8 @@
 <body>
 
 
-  <div class="container-contact100">
-    <div class="wrap-contact100">
+  
+    
       <form id="google-form" class="contact100-form validate-form">
         <div>
 		<span class="contact100-form-title">
@@ -74,8 +74,8 @@
       </form>
 
 
-    </div>
-  </div>
+    
+  
 
 
 
@@ -90,6 +90,7 @@
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   <!--===============================================================================================-->
   <script src="vendor/select2/select2.min.js"></script>
+  
   <script>
     $(".selection-2").select2({
       minimumResultsForSearch: 20,
@@ -108,7 +109,7 @@
       //在這裡我們要先擋掉form默認事件
       e.preventDefault();
 
-      if ($('#sender').val()) {//需要先確認必填欄位是否填寫
+      if ($('#to').val()) {//需要先確認必填欄位是否填寫
         $.ajax({
           // url為Google Form按下submit的aciotn
           url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeaMJ-bgVpvRNLW5q3zF3yu5PnGf9gOLX5cK41MKkJujgXX6g/formResponse",
